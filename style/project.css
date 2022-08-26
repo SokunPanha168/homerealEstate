@@ -1,0 +1,59 @@
+
+.project-section{
+    width: 98%;
+    margin: auto;
+    margin-top: 100px;
+    
+}
+
+.project-section .main-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+  
+}
+.project-section .main-box .box{
+    margin-top: 20px;
+    width: 24%;
+    height:250px;
+    position: relative;
+}
+.project-section .main-box .box .title{
+    width: 150px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.project-section .main-box .box:hover{
+    box-shadow: 0px 2px 5px 2px rgb(162, 162, 162);
+}
+
+.project-section .main-box .box:hover .title{
+    background-color: black;
+}
+
+@media (max-width:1300px) {
+    .project-section .main-box .box{
+        width: 33%;
+    }
+}
+
+@media (max-width:998px) {
+    .project-section .main-box .box{
+        width: 49%;
+    }
+}
+
+@media (max-width:547px) {
+    .project-section .main-box .box{
+        width: 100%;
+    }
+}
